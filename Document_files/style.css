@@ -1,0 +1,23 @@
+body{
+    height:90vh;
+}
+
+a{
+    font-size: 25px;
+    position: absolute;
+    top:50%;
+}
+i{
+    font-size: 50px;
+}
+#right{
+    right:10px;
+}
+#left{
+    left:10px;
+    z-index:1;
+}
+@keyframes left{
+    from{transform:translateX(-100%)}
+    to{transform:translateX(0)}
+}

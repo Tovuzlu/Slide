@@ -1,0 +1,29 @@
+let s=['images.jpg','images1.jpg','images2.jpg','images3.jpg','images4.jpg','images5.jpg','images6.jpg','images7.jpg']
+let k=1
+function change(direction){
+    elem=document.querySelector('#slide')
+    elem.src=s[k] 
+    if(direction=='right'){
+        console.log('Rigth:',k)
+        k++
+        if(k>=s.length){
+            k=0
+        }
+    }
+    else{
+        k--
+        if(k<0){
+            k=s.length-1
+        }
+    }
+
+}
+// var id = setInterval(frame, 5);
+// function frame(l=0,r=0){
+//     if(elem.style.left==0){
+//         clearInterval(id)
+//         }
+//     else{
+//         elem.style.left=-l+10+'%';
+//     }
+// }
